@@ -31,7 +31,7 @@ After I made these, I ran mysql server and I grabbed both codes and ran them.
 I first require two node packages called and defined them:
 
     var mysql = require("mysql");
-		var inquirer = require("inquirer");
+    var inquirer = require("inquirer");
 
 Then used *mysql* node package to set up a connecton to the mysql server and started the connection:
 
@@ -147,19 +147,19 @@ Another sql request is made and the the row is updated with the new quantity ava
 
 ```
 connection.query("Update products SET ? WHERE?",
-							[
-								{
-									stock_quantity: newQuantity
-								},
-								{
-									item_id: answer.productNumber
-								}
-							],
-							function (err) {
-								if (err) throw err;
-								console.log("Success, you bought " + answer.quantity + " items! That will be $" + (answer.quantity*res[0].price) + ". Enjoy the " + res[0].product_name + "!")
-								option()
-							})
+	[
+		{
+			stock_quantity: newQuantity
+		},
+		{
+			item_id: answer.productNumber
+		}
+	],
+	function (err) {
+		if (err) throw err;
+		console.log("Success, you bought " + answer.quantity + " items! That will be $" + (answer.quantity * res[0].price) + ". Enjoy the " + res[0].product_name + "!")
+		option()
+	})
 					}
 				});
 			}
