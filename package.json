@@ -1,0 +1,24 @@
+{
+  "name": "amazon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/russdc88/amazon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/russdc88/amazon/issues"
+  },
+  "homepage": "https://github.com/russdc88/amazon#readme",
+  "dependencies": {
+    "inquirer": "^6.2.0",
+    "mysql": "^2.16.0"
+  }
+}
