@@ -160,12 +160,6 @@ connection.query("Update products SET ? WHERE?",
 		console.log("Success, you bought " + answer.quantity + " items! That will be $" + (answer.quantity * res[0].price) + ". Enjoy the " + res[0].product_name + "!")
 		option()
 	})
-					}
-				});
-			}
-		});
-
-}
 ```
 
 We then make the callback function `option` in which will give you options of continuing to shop or end the shopping by using prompts and condition statements. If continued, the `displayProduct` function will rerun and restart the whole process. If not continued, the the connection will end:
