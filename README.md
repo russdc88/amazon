@@ -192,3 +192,6 @@ function option() {
 the results will look as followed:
 
 ![Example 2](/images/example2.png)
+
+
+See demo video [here](/images/Bamazon_Demo.mov)
